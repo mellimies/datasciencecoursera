@@ -1,13 +1,4 @@
-src_dir <- '/Users/jaska/Desktop/Code/Coursera/R Programming/Assignment 1'
-setwd(src_dir)
-
-get_csv_files <- function(directory, id) {
-  csv_files = character(max(id))
-  for (i in id) {
-    csv_files[i] <- paste(src_dir, '/', directory, '/', sprintf("%03d", i), '.csv', sep='')
-  }
-  csv_files
-}
+source('files.R')
 
 pollutantmean <- function(directory, pollutant, id = 1:332) {
   pol <- if (pollutant == "sulfate") "sulfate" else "nitrate"
@@ -15,10 +6,11 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   csv_files <- get_csv_files(directory, id)
   
   mean_data = numeric()
-  
+  i_file <- 1
   for(i in id) {
-    t <- read.csv(csv_files[i])
+    t <- read.csv(csv_files[i_file])
     mean_data <- c(mean_data, t[, pol])
+    i_file <- i_file + 1
   }
   mean(mean_data, na.rm = TRUE)
 }
