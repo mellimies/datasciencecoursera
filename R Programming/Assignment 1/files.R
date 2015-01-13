@@ -1,4 +1,4 @@
-get_csv_files <- function(directory, id) {
+get_csv_files <- function(directory, id = 1:332) {
   csv_files = character()
   
   for (i in id) {

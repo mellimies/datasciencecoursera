@@ -2,7 +2,7 @@ source('files.R')
 
 pollutantmean <- function(directory, pollutant, id = 1:332) {
   pol <- if (pollutant == "sulfate") "sulfate" else "nitrate"
-  data_dir <- paste(src_dir, '/', directory, sep = '')
+  #data_dir <- paste(src_dir, '/', directory, sep = '')
   csv_files <- get_csv_files(directory, id)
   
   mean_data = numeric()
