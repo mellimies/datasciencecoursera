@@ -10,8 +10,6 @@ J_history = zeros(num_iters, 1);
 num_theta = rows(theta);
 temp_theta = zeros(num_theta, 1);
 
-% X can be normalized too
-
 for iter = 1:num_iters
 
     % ====================== YOUR CODE HERE ======================
@@ -37,6 +35,3 @@ for iter = 1:num_iters
 end
 
 end
-
-%figure;
-%plot(J_history)
