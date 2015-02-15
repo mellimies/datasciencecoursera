@@ -13,7 +13,7 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-h = sum(theta' .* X, 2);
+h = sum(repmat(theta', size(X,1), 1) .* X, 2);
 
 J = 1 / 2 / m * sum((h - y) .^2);
 
