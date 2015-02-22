@@ -10,6 +10,7 @@ Activity label for test activity, one of:
 * SITTING
 * STANDING
 * LAYING
+
 ### subject
 Numeric identifier for test person (1-30) 
 ### tBodyAccmeanX
