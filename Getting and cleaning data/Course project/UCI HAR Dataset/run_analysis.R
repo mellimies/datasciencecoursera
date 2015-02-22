@@ -45,7 +45,7 @@ get_col_names <- function() {
 # -> we can combine y_file and subject_file in a data frame with columns activity, subject
 # (add column names later)
 
-NUM_ROWS=50 # for testing, set to -1 to read all rows
+NUM_ROWS=-1 # for testing, set to -1 to read all rows
 
 data.train <- read.table('train/y_train.txt', nrows=NUM_ROWS) # activity
 data.train <- cbind(data.train, read.table('train/subject_train.txt', nrows=NUM_ROWS)) # subject
@@ -86,7 +86,7 @@ print(n)
 names(tidy_data) <- c("activity", "subject", n[get_columns_to_read(),])
 
 print(dim(tidy_data))
-print(summary(tidy_data))
+#print(summary(tidy_data))
 
 tidy_data <- arrange(tidy_data, activity, subject)
 #View(tidy_data)
@@ -94,7 +94,12 @@ tidy_data <- arrange(tidy_data, activity, subject)
 td <- group_by(tidy_data, activity, subject)
 #View(td)
 
-print(summarise(td, yacco=mean(tBodyAccmeanX)))
+td <- summarise_each(td, funs(mean))
+print(td)
+
+
+#td2 <- mutate_each(td, funs(colmea))
+#print(summarise(td, yacco=mean(tBodyAccmeanX)))
 
 # insert index?
 
