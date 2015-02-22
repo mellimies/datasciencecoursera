@@ -142,8 +142,8 @@ Mean frequency-domain body acceleration jerk magnitude standard deviation
 ### fBodyGyroMagmean
 Mean frequency-domain body angular acceleration magnitude mean
 ### fBodyGyroMagstd
-Mean frequency-domain body angular acceleration standard deviation
+Mean frequency-domain body angular acceleration magnitude standard deviation
 ### fBodyGyroaccelerationjerkMagmean
 Mean frequency-domain body angular acceleration jerk magnitude mean
 ### fBodyGyroaccelerationjerkMagstd
-Mean frequency-domain body angular acceleration jerk standard deviation
+Mean frequency-domain body angular acceleration jerk magnitude standard deviation
