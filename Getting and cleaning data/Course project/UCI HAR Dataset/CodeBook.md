@@ -37,17 +37,17 @@ Mean time-domain gravity acceleration X component standard deviation
 Mean time-domain gravity acceleration Y component standard deviation
 ### tGravityAccstdZ
 Mean time-domain gravity acceleration Z component standard deviation
-### tBodyAccacceleration jerkmeanX
+### tBodyAccaccelerationjerkmeanX
 Mean time-domain body acceleration jerk X component mean  
-### tBodyAccacceleration jerkmeanY
+### tBodyAccaccelerationjerkmeanY
 Mean time-domain body acceleration jerk Y component mean  
-### tBodyAccacceleration jerkmeanZ
+### tBodyAccaccelerationjerkmeanZ
 Mean time-domain body acceleration jerk Z component mean  
-### tBodyAccacceleration jerkstdX
+### tBodyAccaccelerationjerkstdX
 Mean time-domain body acceleration jerk X component standard deviation
-### tBodyAccacceleration jerkstdY
+### tBodyAccaccelerationjerkstdY
 Mean time-domain body acceleration jerk Y component standard deviation
-### tBodyAccacceleration jerkstdZ
+### tBodyAccaccelerationjerkstdZ
 Mean time-domain body acceleration jerk Z component standard deviation
 ### tBodyGyromeanX
 Mean time-domain body angular acceleration X component mean
@@ -61,17 +61,17 @@ Mean time-domain body angular acceleration X component standard deviation
 Mean time-domain body angular acceleration Y component standard deviation
 ### tBodyGyrostdZ
 Mean time-domain body angular acceleration Z component standard deviation
-### tBodyGyroacceleration jerkmeanX
+### tBodyGyroaccelerationjerkmeanX
 Mean time-domain body angular acceleration jerk X component mean
-### tBodyGyroacceleration jerkmeanY
+### tBodyGyroaccelerationjerkmeanY
 Mean time-domain body angular acceleration jerk Y component mean
-### tBodyGyroacceleration jerkmeanZ
+### tBodyGyroaccelerationjerkmeanZ
 Mean time-domain body angular acceleration jerk Z component mean
-### tBodyGyroacceleration jerkstdX
+### tBodyGyroaccelerationjerkstdX
 Mean time-domain body angular acceleration jerk X standard deviation
-### tBodyGyroacceleration jerkstdY
+### tBodyGyroaccelerationjerkstdY
 Mean time-domain body angular acceleration jerk Y standard deviation
-### tBodyGyroacceleration jerkstdZ
+### tBodyGyroaccelerationjerkstdZ
 Mean time-domain body angular acceleration jerk Z standard deviation
 ### tBodyAccMagmean
 Mean time-domain body acceleration magnitude mean
@@ -81,15 +81,15 @@ Mean time-domain body acceleration magnitude standard deviation
 Mean time-domain gravity acceleration magnitude mean
 ### tGravityAccMagstd
 Mean time-domain gravity acceleration standard deviation
-### tBodyAccacceleration jerkMagmean
+### tBodyAccaccelerationjerkMagmean
 Mean time-domain body acceleration jerk magnitude mean
-### tBodyAccacceleration jerkMagstd
+### tBodyAccaccelerationjerkMagstd
 Mean time-domain body acceleration jerk magnitude standard deviation
 ### tBodyGyroMagmean
 Mean time-domain angular acceleration magnitude mean
 ### tBodyGyroMagstd
 Mean time-domain angular acceleration magnitude standard deviation
-### tBodyGyroacceleration jerkMagmean
+### tBodyGyroaccelerationjerkMagmean
 Mean time-domain angular acceleration jerk magnitude mean
 ### tBodyGyroacceleration jerkMagstd
 Mean time-domain angular acceleration jerk magnitude standard deviation
@@ -105,17 +105,17 @@ Mean frequency-domain body acceleration X standard deviation
 Mean frequency-domain body acceleration Y standard deviation
 ### fBodyAccstdZ
 Mean frequency-domain body acceleration Z standard deviation
-### fBodyAccacceleration jerkmeanX
+### fBodyAccaccelerationjerkmeanX
 Mean frequency-domain body acceleration jerk X component mean
-### fBodyAccacceleration jerkmeanY
+### fBodyAccaccelerationjerkmeanY
 Mean frequency-domain body acceleration jerk Z component mean
-### fBodyAccacceleration jerkmeanZ
+### fBodyAccaccelerationjerkmeanZ
 Mean frequency-domain body acceleration jerk Z component mean
-### fBodyAccacceleration jerkstdX
+### fBodyAccaccelerationjerkstdX
 Mean frequency-domain body acceleration jerk X standard deviation
-### fBodyAccacceleration jerkstdY
+### fBodyAccaccelerationjerkstdY
 Mean frequency-domain body acceleration jerk Y standard deviation
-### fBodyAccacceleration jerkstdZ
+### fBodyAccaccelerationjerkstdZ
 Mean frequency-domain body acceleration jerk Z standard deviation
 ### fBodyGyromeanX
 Mean frequency-domain body angular acceleration X component mean
@@ -133,15 +133,15 @@ Mean frequency-domain body angular acceleration Z standard deviation
 Mean frequency-domain body acceleration magnitude mean
 ### fBodyAccMagstd
 Mean frequency-domain body acceleration magnitude standard deviation
-### fBodyAccacceleration jerkMagmean
+### fBodyAccaccelerationjerkMagmean
 Mean frequency-domain body acceleration jerk magnitude mean
-### fBodyAccacceleration jerkMagstd
+### fBodyAccaccelerationjerkMagstd
 Mean frequency-domain body acceleration jerk magnitude standard deviation
 ### fBodyGyroMagmean
 Mean frequency-domain body angular acceleration magnitude mean
 ### fBodyGyroMagstd
 Mean frequency-domain body angular acceleration standard deviation
-### fBodyGyroacceleration jerkMagmean
+### fBodyGyroaccelerationjerkMagmean
 Mean frequency-domain body angular acceleration jerk magnitude mean
-fBodyGyroacceleration jerkMagstd
+fBodyGyroaccelerationjerkMagstd
 Mean frequency-domain body angular acceleration jerk standard deviation
