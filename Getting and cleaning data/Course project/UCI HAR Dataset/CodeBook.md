@@ -2,7 +2,7 @@
 
 ## Created on Feb-22, 2015 by Jaakko Puurunen
 
-All measurements are normalized so they have no unit. All records are mean values or a number of measurements, therefore they all start with "mean". 
+All measurements are normalized so they have no unit. All records are mean values of a number of measurements, therefore they all start with "mean". 
 
 ### activity
 Activity label for test activity, one of:
