@@ -1,8 +1,8 @@
-## This is the readme file for Coursera Getting And Cleaning Data class course project assignment by Jaakko Puurunen.
+# This is the readme file for Coursera Getting And Cleaning Data class course project assignment by Jaakko Puurunen.
 
-# Date: Feb-22, 2015
+## Date: Feb-22, 2015
 
-# Course project description:
+## Course project description:
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -12,7 +12,7 @@
 
 The course discussion board had [an excellent thread] (https://class.coursera.org/getdata-011/forum/thread?thread_id=69) which was used as guidance along other discussion threads.
 
-# My implementation
+## My implementation
 
 My own script does not follow steps given exactly as I decided to read only the columns needed for the tidy data set. Script logic is:
 
