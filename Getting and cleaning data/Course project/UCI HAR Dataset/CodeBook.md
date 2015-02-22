@@ -1,5 +1,5 @@
 ### activity
-> Activity label for test activity
+Activity label for test activity
 1 WALKING
 2 WALKING_UPSTAIRS
 3 WALKING_DOWNSTAIRS
