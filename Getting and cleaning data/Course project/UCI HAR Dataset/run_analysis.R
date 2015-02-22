@@ -67,6 +67,7 @@ tidy_data <- rbind(data.train, data.test)
 
 n <- get_features()
 n <- gsub("[(),-]", "", t(n)) # remove '(),-' characters
+n <- gsub("BodyBody", "Body", n)
 n <- t(n)
 
 # Fix column names
