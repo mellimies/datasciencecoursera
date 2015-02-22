@@ -7,11 +7,11 @@
 5 STANDING
 6 LAYING
 ### subject
-> Numeric identifier for test person (1-30) 
+Numeric identifier for test person (1-30) 
 ### tBodyAccmeanX
-> Mean time-domain body acceleration X component value  
+Mean time-domain body acceleration X component value  
 ### tBodyAccmeanY
-> Mean time-domain body acceleration X component value  
+Mean time-domain body acceleration X component value  
 
 tBodyAccmeanZ
 tBodyAccstdX
