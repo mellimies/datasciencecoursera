@@ -87,4 +87,4 @@ summarise_each(funs(mean))
 #print(td)
 
 
-write.table(td, "course_project_data.csv", row.names=FALSE)
+write.table(td, "course_project_data.txt", row.names=FALSE)
