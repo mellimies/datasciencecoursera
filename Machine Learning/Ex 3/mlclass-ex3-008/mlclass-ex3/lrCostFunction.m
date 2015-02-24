@@ -41,11 +41,11 @@ h = sigmoid( X * theta );
 
 J = 1 / m * sum(-y .* log(h) - (1 - y) .* log(1 - h)) + lambda / 2 / m * sum(theta(2:end) .^2);
 
-% compute whole gradien first, then remove regularization from first
+% compute whole gradient first, then remove regularization from first
 % element
 
 grad = 1 ./ m * X' * (h - y) + lambda / m * theta;
-grad(1) = 1 ./ m * sum( h - y ) .* X(1)
+grad(1) = 1 ./ m * sum( h - y ) .* X(1);
 
 
 % =============================================================
