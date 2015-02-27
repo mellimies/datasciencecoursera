@@ -56,15 +56,19 @@ a3 = sigmoid(z3)
 Q = eye(num_labels);
 y_label = Q([y'],:)
 
-% compute cost
+% compute unregularized cost
 
 t1 = -y_label .* log(a3);
 t2 = (1 - y_label) .* (log(1 - a3));
 t3 = t1-t2;
 J = sum(sum(t3)) / m;
 
+% regularized cost
 
-%J = max(a3, [], 2)
+Th1 = Theta1(:,2:end) .^2
+Th2 = Theta2(:,2:end) .^2
+
+J = J + lambda / 2 / m * (sum(sum(Th1)) + sum(sum(Th2)))
 
 % Part 2: Implement the backpropagation algorithm to compute the gradients
 %         Theta1_grad and Theta2_grad. You should return the partial derivatives of
