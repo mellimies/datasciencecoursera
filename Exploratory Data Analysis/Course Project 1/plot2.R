@@ -6,10 +6,10 @@ df <- filter(df, Date == "1/2/2007" | Date == "2/2/2007")
 
 df$Date_and_time <- strptime(paste(df$Date, df$Time), "%d/%m/%Y %H:%M:%S")
 
-# plot 1
+# plot 2
 
 par(mfrow=c(1,1))
 
-hist(df$Global_active_power, col='red', main='Global Active Power', xlab='Global Active Power (kilowatts)')
-dev.copy(png, file="plot1.png")
+plot(df$Date_and_time, df$Global_active_power, ylab = 'Global Active Power (kilowatts)', type='o', pch='', xlab='')
+dev.copy(png, file="plot2.png")
 dev.off()
