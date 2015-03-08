@@ -54,7 +54,7 @@ a3 = sigmoid(z3)
 % https://class.coursera.org/ml-008/forum/thread?thread_id=1060#post-4963
 
 Q = eye(num_labels);
-y_label = Q([y'],:)
+y_label = Q([y'],:);
 
 % compute unregularized cost
 
@@ -65,10 +65,10 @@ J = sum(sum(t3)) / m;
 
 % regularized cost
 
-Th1 = Theta1(:,2:end) .^2
-Th2 = Theta2(:,2:end) .^2
+Th1 = Theta1(:,2:end) .^2;
+Th2 = Theta2(:,2:end) .^2;
 
-J = J + lambda / 2 / m * (sum(sum(Th1)) + sum(sum(Th2)))
+J = J + lambda / 2 / m * (sum(sum(Th1)) + sum(sum(Th2)));
 
 % Part 2: Implement the backpropagation algorithm to compute the gradients
 %         Theta1_grad and Theta2_grad. You should return the partial derivatives of
@@ -85,6 +85,26 @@ J = J + lambda / 2 / m * (sum(sum(Th1)) + sum(sum(Th2)))
 %               over the training examples if you are implementing it for the 
 %               first time.
 %
+
+for iter = 1:m
+    z2 = X * Theta1';
+    a2 = sigmoid(z2);
+    a2 = [ones(size(a2, 1), 1), a2];
+    a3 = sigmoid(a2  * Theta2');
+
+    delta3 = a3 - y_label;
+    
+    Th2 = Theta2(:,2:end);
+    delta2 = (delta3 * Th2) .* sigmoidGradient(z2);
+
+    D3 = delta3' * a2;
+    D2 = delta2' * X;
+    
+    Theta2_grad = D3/m;
+    Theta1_grad = D2/m;
+
+end
+
 % Part 3: Implement regularization with the cost function and gradients.
 %
 %         Hint: You can implement this around the code for
