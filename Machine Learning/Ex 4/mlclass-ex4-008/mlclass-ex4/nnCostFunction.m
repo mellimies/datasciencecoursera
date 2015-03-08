@@ -105,6 +105,14 @@ for iter = 1:m
 
 end
 
+% regularization
+
+Theta2(:,1) = 0; % set first column to zeros (bias unit)
+Theta1(:,1) = 0;
+
+Theta2_grad = Theta2_grad + (lambda / m) * Theta2;
+Theta1_grad = Theta1_grad + (lambda / m) * Theta1;
+
 % Part 3: Implement regularization with the cost function and gradients.
 %
 %         Hint: You can implement this around the code for
