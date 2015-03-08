@@ -8,6 +8,8 @@ df$Date_and_time <- strptime(paste(df$Date, df$Time), "%d/%m/%Y %H:%M:%S")
 
 # plot 4
 
+png(file = "plot4.png")
+
 par(mfrow=c(2,2))
 with(df, plot(Date_and_time, Global_active_power, ylab = 'Global Active Power', type='o', pch='', xlab=''))
 with(df, plot(Date_and_time, Voltage, ylab = 'Voltage', type='o', pch='', xlab='datetime'))
@@ -19,5 +21,4 @@ legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=
 
 with(df, plot(Date_and_time, Global_reactive_power, type='o', pch='', xlab='datetime'))
 
-dev.copy(png, file="plot4.png")
 dev.off()
