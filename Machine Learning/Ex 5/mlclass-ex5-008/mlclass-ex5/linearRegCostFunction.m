@@ -24,8 +24,7 @@ J = 1 / 2 / m * sum((h - y) .^2);
 theta(1) = 0;
 J = J + lambda / 2 / m * sum(theta.^2);
 
-
-
+grad = 1 / m * sum( repmat(h-y, 1, size(X, 2)) .*  X ) + lambda / m .* theta';
 
 
 
