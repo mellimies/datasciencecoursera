@@ -44,6 +44,8 @@ YR = Y .* R; % R has 1 in (i,j) if user j has rated movie i
 
 J = sum(sum((X * Theta' .* R - YR) .^2)) / 2;
 
+X_grad = (X * Theta' .* R - YR) * Theta;
+Theta_grad = (X * Theta' .* R - YR)' * X;
 
 
 
